@@ -161,7 +161,7 @@ function display_libs_pimoroni {
 	cmds["Preparing"]='sudo rm -rf inky-main/ pimoroni.zip'
 	cmds["Downloading"]='sudo wget -q https://codeload.github.com/pimoroni/inky/zip/refs/heads/main -O pimoroni.zip 2>&1 | grep -i "failed\|error"'
 	cmds["Unpacking"]='sudo unzip -q pimoroni.zip'
-	cmds["Copying"]='sudo cp -r inky-main/library/inky/ lib/'
+	cmds["Copying"]='sudo cp -r inky-main/inky/ lib/'
 	cmds["Cleanup"]='sudo rm -r inky-main/ pimoroni.zip'
 
 	declare -a order;
